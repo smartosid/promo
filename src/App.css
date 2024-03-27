@@ -1,0 +1,195 @@
+/* App.css */
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
+body {
+  background-color: #C2C9D5;
+  color: #eee;
+}
+
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+button.with-text {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.try {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+/* Responsive Styles */
+.app-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-title {
+  font-family: 'Rocher', sans-serif; /* Added fallback font */
+  font-size: 3rem; /* Changed to rem unit for better scalability */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Responsive Styles */
+.app-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.try {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+}
+.app-title {
+  font-family: 'Rocher', sans-serif; /* Added fallback font */
+  font-size: 3rem; /* Changed to rem unit for better scalability */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+.todo-section{
+  margin-top: 180px;
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  .todo-section {
+    flex: 0 0 100%;
+    align-items: center;
+    flex-direction: column;
+    max-width: relative;
+    margin-top: 300px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .try {
+    font-size: 20px;
+  }
+}
