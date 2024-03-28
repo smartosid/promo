@@ -13,20 +13,21 @@ function App() {
 
   return (
     <div className="flex-container">
-      <main>
-          <div className='try'>
-            <h1>promofocus</h1>
-            {/* Render Timer or Settings based on showSettings state */}
-            <SettingsContext.Provider value={{ showSettings, setShowSettings, workMinutes, breakMinutes, setWorkMinutes, setBreakMinutes }}>
-              {showSettings ? <Settings /> : <Timer />}
-            </SettingsContext.Provider>
-          </div>
-          
-        </main>
-        <div className="todo-section">
-        <TodoList />
-      </div>
-     
+       <main>
+       <div className='try'>
+      <header> <h1>promofocus</h1></header>
+   
+      
+      {/* Render Timer or Settings based on showSettings state */}
+      <SettingsContext.Provider value={{ showSettings, setShowSettings, workMinutes, breakMinutes, setWorkMinutes, setBreakMinutes }}>
+        {showSettings ? <Settings /> : <Timer />}
+      </SettingsContext.Provider>
+    </div>
+  
+    <div className="todo-section">
+      <TodoList />
+    </div>
+  </main>
       
     </div>
   );
