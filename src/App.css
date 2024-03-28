@@ -7,6 +7,8 @@
 body {
   background-color: #C2C9D5;
   color: #eee;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 main {
@@ -82,114 +84,4 @@ h1 {
 
 .purples {
   font-palette: --Purples;
-}
-
-/* Responsive Styles */
-.app-container {
-  max-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.app-title {
-  font-family: 'Rocher', sans-serif; /* Added fallback font */
-  font-size: 3rem; /* Changed to rem unit for better scalability */
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.content-container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px; /* Added padding for better spacing */
-  box-sizing: border-box; /* Ensures padding doesn't affect the width */
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Responsive Styles */
-.app-container {
-  max-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.try {
-  font-family: 'Rocher';
-  text-align: center;
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 200px;
-}
-.app-title {
-  font-family: 'Rocher', sans-serif; /* Added fallback font */
-  font-size: 3rem; /* Changed to rem unit for better scalability */
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.content-container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px; /* Added padding for better spacing */
-  box-sizing: border-box; /* Ensures padding doesn't affect the width */
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-
-.todo-section{
-  margin-top: 180px;
-  flex: 0 0 calc(50% - 10px);
-  max-width: calc(50% - 10px);
-  box-sizing: border-box; /* Ensures padding doesn't affect the width */
-}
-
-
-
-
-/* Styles for mobile devices */
-@media (max-width: 768px) {
-  .todo-section {
-    flex: 0 0 100%;
-    align-items: center;
-    flex-direction: column;
-    max-width: relative;
-    margin-top: 300px;
-  }
-
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .try {
-    font-size: 20px;
-  }
 }
