@@ -15,6 +15,7 @@ main {
   padding-top: 50px;
   max-width: 340px;
   margin: 0 auto;
+  align-items: center;
   text-align: center;
 }
 
@@ -57,7 +58,7 @@ label {
 .try {
   font-family: 'Rocher';
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,4 +85,19 @@ h1 {
 
 .purples {
   font-palette: --Purples;
+}
+
+/**/
+@media screen and (max-width:600px) {
+ 
+  .main,.body {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  .main,.body {
+      width: 70%;
+  }
 }
