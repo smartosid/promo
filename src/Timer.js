@@ -8,7 +8,7 @@ import { useContext, useState, useEffect, useRef, useCallback } from "react";
 import SettingsContext from "./SettingsContext";
 
 const red = '#7469B6';
-const green = '#4aec8c';
+const green = '#4CA580'; // Adjusted green color
 const blue = '#6495ED';
 
 function Timer() {
@@ -28,7 +28,7 @@ function Timer() {
       case 'promodoro':
         return settingsInfo.workMinutes * 60;
       case 'shortBreak':
-        return 15 * 60;
+        return 5 * 60;
       case 'longBreak':
         return 30 * 60;
       default:
@@ -97,13 +97,13 @@ function Timer() {
     <div style={{ width: '500px', borderRadius: '20px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', padding: '20px', marginBottom: '20px', backgroundColor: '#CEDDDA', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                  
           <button
             style={{
-              backgroundColor: mode === 'promodoro' ? red : 'white',
-              color: mode === 'promodoro' ? 'white' : 'black',
+              backgroundColor: mode === 'promodoro' ? red : 'transparent',
+              color: mode === 'promodoro' ? 'white' : red,
               padding: '10px 20px',
               borderRadius: '5px',
+              border: mode === 'promodoro' ? 'none' : `1px solid ${red}`,
               marginRight: '10px',
             }}
             onClick={() => {
@@ -118,10 +118,11 @@ function Timer() {
           </button>
           <button
             style={{
-              backgroundColor: mode === 'shortBreak' ? green : 'white',
-              color: mode === 'shortBreak' ? 'white' : 'black',
+              backgroundColor: mode === 'shortBreak' ? green : 'transparent',
+              color: mode === 'shortBreak' ? 'white' : green,
               padding: '10px 20px',
               borderRadius: '5px',
+              border: mode === 'shortBreak' ? 'none' : `1px solid ${green}`,
               marginRight: '10px',
             }}
             onClick={() => {
@@ -136,10 +137,11 @@ function Timer() {
           </button>
           <button
             style={{
-              backgroundColor: mode === 'longBreak' ? blue : 'white',
-              color: mode === 'longBreak' ? 'white' : 'black',
+              backgroundColor: mode === 'longBreak' ? blue : 'transparent',
+              color: mode === 'longBreak' ? 'white' : blue,
               padding: '10px 20px',
               borderRadius: '5px',
+              border: mode === 'longBreak' ? 'none' : `1px solid ${blue}`,
             }}
             onClick={() => {
               setMode('longBreak');
