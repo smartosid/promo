@@ -1,0 +1,308 @@
+/* App.css */
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
+body {
+  background-color: #C2C9D5;
+  color: #eee;
+  box-sizing: border-box;
+ 
+}
+
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+ 
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+button.with-text {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.try {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+/*mobiles*/
+@media screen and (max-width:600px) {
+ 
+  .main,.body {
+      width: 50%;
+      margin-top: 0px;
+    
+  }
+  /* App.css */
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
+body {
+  background-color: #C2C9D5;
+  color: #eee;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+button.with-text {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.try {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
+@media (min-width: 600px) {
+  .main,
+  .body {
+    margin-top: 0px;
+    width: fit-content;
+  }
+
+  .try {
+    font-family: 'Rocher';
+    text-align: left;
+    font-size: 40px;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-right: 20px; /* Adjust margin as needed */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add a gap between the items */
+    margin-top: 40px; /* Add some vertical spacing to the container */
+  }
+
+  .todo-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ceddda;
+    flex: 0 0 calc(50% - 10px); /* Set the width of each card to 50% minus the gap */
+    max-width: calc(50% - 10px); /* Ensure the cards don't exceed 50% of the container width */
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 899px) {
+  .try {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    flex-direction: column; /* Switch to a column layout for smaller screens */
+    align-items: center; /* Center align items vertically */
+  }
+
+  .todo-card {
+    flex: 0 0 calc(100% - 20px); /* Cards take full width with some margin */
+    max-width: calc(100% - 20px); /* Ensure the cards don't exceed container width */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+  }
+}
+
+/* Additional adjustments for screens between 600px and 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+  .try {
+    font-size: 30px; /* Adjust font size for screens between 600px and 899px */
+  }
+}
+
+
+/*to do list css*/
+.todo-card {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-top: 120px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color:#CEDDDA;
+}
+.todo-title {
+  font-size: 24px;
+  color: #121111;
+  background-color: #CEDDDA;
+  font-family: cursive; /* Change the font-family here */
+}
+
+
+.todo-input-container {
+  display: flex;
+  
+  background-color: #CEDDDA;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #121111;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6962AD;
+  color: #CEDDDA;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #6962AD;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  color: #121111;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #121111;
+  border-bottom: 1px solid #CEDDDA;
+}
+
+.remove-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: #CEDDDA;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+
+
+/*hello css*/
+
+
