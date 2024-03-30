@@ -166,6 +166,7 @@ label {
   .main,
   .body {
     margin-top: 0px;
+    width: fit-content;
   }
 
   .try {
@@ -299,6 +300,13 @@ label {
 .remove-button:hover {
   background-color: #c82333;
 }
+
+
+
+
+
+
+
 
 
 
