@@ -19,7 +19,7 @@ function App() {
        <div class="container">
        <div className='try'>
       
-      <header> <h1>Promofocus</h1></header>
+      <header> <h1>Pomofocus</h1></header>
    
      
       {/* Render Timer or Settings based on showSettings state */}
