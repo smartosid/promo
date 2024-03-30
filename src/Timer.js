@@ -114,7 +114,7 @@ function Timer() {
               secondsLeftRef.current = initialSeconds;
             }}
           >
-            Promodoro
+            Pomodoro
           </button>
           <button
             style={{
