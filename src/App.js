@@ -15,12 +15,13 @@ function App() {
   return (
 
     <main>
+     
        <div class="container">
        <div className='try'>
       
       <header> <h1>Promofocus</h1></header>
    
-      
+     
       {/* Render Timer or Settings based on showSettings state */}
       <SettingsContext.Provider value={{ showSettings, setShowSettings, workMinutes, breakMinutes, setWorkMinutes, setBreakMinutes }}>
         {showSettings ? <Settings /> : <Timer />}
@@ -29,8 +30,12 @@ function App() {
   
     <div className="todo-section">
       <TodoList />
+     
     </div>
+    
+  
     </div>
+   
   </main>
   
    
